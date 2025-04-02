@@ -1,125 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 @media screen and (min-width:1000px) {
-    * {
-        margin: 0;
-        padding: 0;
+    body {
+        background: linear-gradient(to bottom, #0095ff, #ffffff);
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     
-    body {
-        background: linear-gradient(#0080ff, #99cdf4);
-        height: 110%;
+    .container {
+        border: solid;
+        padding: 50px;
         font-family: arial;
+        border-radius: 35px;
+        background-color: white;
+        margin: 30px;
         text-align: center;
     }
     
-    input {
-        border-radius: 15px;
-        color: white;
-        background-color: rgb(0, 18, 66);
-        font-size: 30px;
-        padding: 10px;
-        margin: 5px;
-    }
-    input::placeholder{
-        color: rgb(127, 127, 127);
-    }
+    .exercicio {
+        input {
+            border: none;
+            border-radius: 15px;
+            color: white;
+            padding: 15px;
+            background: linear-gradient(to right, rgb(0, 0, 87), rgb(91, 0, 211));
+            font-size: 30px;
+            width: 90%;
+        }
     
-    h2 {
-        margin: 0px 165px 15px 165px;
-        border-radius: 10px;
-        color: white;
-        background-color: rgba(0, 30, 255, 0.471);
-        padding: 15px;
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.459);
+        }
+    
+        input[type="number"]:focus {
+            outline: none;
+        }
+    
+        hr {
+            margin: 5% 0 5% 0;
+        }
+    
+        button {
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            background: linear-gradient(to right, #0095ff, #938cff);
+            margin: 25px 0 25px 0;
+            font-size: 30px;
+            width: 100%;
+    
+        }
+    
+        button:active {
+            background: linear-gradient(to right, rgb(0, 0, 87), rgb(91, 0, 211));
+            color: white;
+        }
+    
+        h2 {
+            margin: 20px 0 0 0;
+        }
     }
-    .container{
-        background-color: white;
-        margin: 60px 35% 0 35%;
-        border-radius: 15px;
-        padding: 25px 25px 2% 25px;
-        border: solid;
-    }
-    button{
-        font-size: 30px;
-        margin: 25px;
-        border-radius: 15px;
-        padding: 3% 19% 3% 19%;
-        color: white;
-        border: none;
-        background-color: rgb(55, 0, 255);
-    }
-    button:active{
-        background-color: rgb(14, 0, 61);
-    }
-    h1{
-        margin: 15px;
-    }
-    hr{
-        margin-bottom: 15px;
-    }
-    p{
-        bottom: 0;
-    }    
 }
 @media screen and (max-width:1000px) {
-    * {
-        margin: 0;
-        padding: 0;
-    }
-    
     body {
-        background: linear-gradient(#0080ff, #99cdf4);
-        height: 100vh;
-        font-family: arial;
-        text-align: center;
+        background: linear-gradient(to bottom, #0095ff, #ffffff);
+        height: 100%;
     }
     
-    input {
-        border-radius: 15px;
-        color: white;
-        background-color: rgb(0, 18, 66);
-        font-size: 20px;
-        padding: 10px;
-        margin: 5px;
-    }
-    input::placeholder{
-        color: rgb(127, 127, 127);
-    }
-    
-    h2 {
-        margin: 0px 16px 15px 15px;
-        border-radius: 10px;
-        color: white;
-        background-color: rgba(0, 30, 255, 0.471);
-        padding: 15px;
-    }
-    .container{
-        background-color: white;
-        margin: 60px 3% 152px 5%;
-        border-radius: 15px;
-        padding: 25px 25px 2% 25px;
+    .container {
         border: solid;
-    }
-    button{
-        font-size: 30px;
-        margin: 25px;
-        border-radius: 15px;
-        padding: 10% 20% 10% 20%;
-        color: white;
-        border: none;
-        background-color: rgb(55, 0, 255);
-    }
-    button:active{
-        background-color: rgb(14, 0, 61);
-    }
-    h1{
-        margin: 15px;
-    }
-    hr{
-        margin-bottom: 15px;
-    }
-    p{
-        bottom: 0;
+        padding: 50px;
+        font-family: arial;
+        border-radius: 35px;
+        background-color: white;
+        margin: 30px;
+        text-align: center;
     }
     img{
         width: 100%;
+    }
+    .exercicio {
+        h1{
+            font-size: 150%;
+        }
+        input {
+            border: none;
+            border-radius: 15px;
+            color: white;
+            padding: 15px;
+            background: linear-gradient(to right, rgb(0, 0, 87), rgb(91, 0, 211));
+            font-size: 30px;
+            width: 90%;
+        }
+    
+        input::placeholder {
+            color: rgba(255, 255, 255, 0.459);
+        }
+    
+        input[type="number"]:focus {
+            outline: none;
+        }
+    
+        hr {
+            margin: 5% 0 5% 0;
+        }
+    
+        button {
+            color: white;
+            padding: 10px;
+            border-radius: 15px;
+            border: none;
+            background: linear-gradient(to right, #0095ff, #938cff);
+            margin: 25px 0 25px 0;
+            font-size: 40px;
+            width: 100%;
+    
+        }
+    
+        button:active {
+            background: linear-gradient(to right, rgb(0, 0, 87), rgb(91, 0, 211));
+            color: white;
+        }
+    
+        h2 {
+            margin: 20px 0 0 0;
+        }
     }
 }
