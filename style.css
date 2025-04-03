@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
 }
+
 body {
     background: linear-gradient(to right, rgb(0, 0, 87), rgb(63, 1, 145));
     height: 100vh;
@@ -12,7 +13,9 @@ body {
 }
 
 .container {
-    border: solid #938cff;
+    outline: 3px solid rgb(0, 0, 87);
+    outline-offset: -5px;
+    border: #ffffff solid;
     padding: 50px;
     font-family: arial;
     border-radius: 35px;
@@ -55,6 +58,13 @@ body {
         width: 100%;
     }
 
+    button:hover {
+        transition: 0.15s;
+        background: linear-gradient(to right, #0095ff, #938cff);
+        outline: 3px solid rgb(255, 255, 255);
+        outline-offset: -5px;
+    }
+
     button:active {
         background: linear-gradient(to right, rgb(0, 0, 87), rgb(91, 0, 211));
         color: white;
@@ -64,10 +74,12 @@ body {
         color: rgb(0, 0, 87);
         margin: 20px 0 0 0;
     }
-    h1{
+
+    h1 {
         color: rgb(0, 0, 87);
     }
-    p{
-        color: rgb(0, 0, 87); 
+
+    p {
+        color: rgb(0, 0, 87);
     }
 }
