@@ -54,12 +54,15 @@ function LNPC() {
     let watts = document.getElementById("Watts").value
     let area = largura * comprimento
     let pt = area * 18
-    let resultado = pt / watts
-    resultado = resultado.toFixed(0)
-    if (largura < 1 || comprimento < 1 || watts < 1) {
+    let resultado = (pt / watts).toFixed(0)
+    if (resultado < 1){
+        resultado = 1
+    }
+    if (largura < 1 || comprimento < 1 || watts < 45 || watts > 110) {
         alert("Insira valores válidos")
     }
+    
     else{
-        visor.innerHTML = "Número de lampâdas necessárias: " + resultado + " lâmpadas."
+        visor.innerHTML = "Número de lampâdas necessárias: " + resultado + " lâmpadas de 18W"
     }
 }
